@@ -35,12 +35,10 @@ services:
         fromDatabase:
           name: n8n-db
           property: user
-      # Add these new environment variables:
       - key: N8N_EDITOR_BASE_URL
         value: https://n8n-service-oj99.onrender.com
       - key: WEBHOOK_URL
-        value: https://n8n-service-oj99.onrender.com/rest/oauth2-credential/callback
-      # Optional additional URL configuration:
+        value: https://n8n-service-oj99.onrender.com
       - key: N8N_HOST
         value: n8n-service-oj99.onrender.com
       - key: N8N_PROTOCOL
